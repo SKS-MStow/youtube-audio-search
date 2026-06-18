@@ -3,6 +3,7 @@ import SwiftUI
 @main
 @MainActor
 struct YouTubeAudioSearchApp: App {
+  @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
   @State private var store = YouTubeStore()
 
   var body: some Scene {

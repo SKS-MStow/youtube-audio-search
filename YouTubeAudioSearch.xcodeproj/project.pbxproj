@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A2AE5905A43FC89B5064E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562849FBB56DB320D331E6A /* AppDelegate.swift */; };
 		0CA358C461F49DE165CFC0DB /* YouTubeAudioSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0779473FBBEFA077116483 /* YouTubeAudioSearchApp.swift */; };
 		1A4018D411E66CFC69DDABE3 /* YouTubeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383A0314816CDAF36DBAF66A /* YouTubeStore.swift */; };
 		1B47061C550616140F0A9170 /* VideoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1554BC7940146E872593FC /* VideoRow.swift */; };
@@ -40,6 +41,7 @@
 		5CC4F1EF4584AA0181961B77 /* NowPlayingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingBar.swift; sourceTree = "<group>"; };
 		5CF66A130D202271D52A8D9D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		5F4805BB6D52DD54E8F9AE61 /* ContentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentState.swift; sourceTree = "<group>"; };
+		7562849FBB56DB320D331E6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B864596B30B3281937FDA45 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		7CDC3F0326F0692DA9C5923B /* YouTubePlayerWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerWebView.swift; sourceTree = "<group>"; };
 		8509429459E2F01018AC373E /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 		EE4B13C98BF252463963DAC3 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				7562849FBB56DB320D331E6A /* AppDelegate.swift */,
 				8509429459E2F01018AC373E /* AppRootView.swift */,
 				8D0779473FBBEFA077116483 /* YouTubeAudioSearchApp.swift */,
 			);
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A2AE5905A43FC89B5064E71 /* AppDelegate.swift in Sources */,
 				876A2998E0F00747CC5D2440 /* AppRootView.swift in Sources */,
 				90116AACE04A531D04882926 /* CarPlaySceneDelegate.swift in Sources */,
 				1F817FBF2C22532C33242A7B /* ContentState.swift in Sources */,
@@ -472,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/Debug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 5;
 				INFOPLIST_FILE = YouTubeAudioSearch/Resources/Info.plist;
