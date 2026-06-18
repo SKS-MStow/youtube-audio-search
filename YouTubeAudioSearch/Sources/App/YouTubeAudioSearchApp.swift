@@ -9,7 +9,12 @@ struct YouTubeAudioSearchApp: App {
     WindowGroup {
       AppRootView()
         .environment(store)
+        .task {
+          await store.restoreSignIn()
+        }
+        .onOpenURL { url in
+          _ = GoogleAuthService.handle(url)
+        }
     }
   }
 }
-

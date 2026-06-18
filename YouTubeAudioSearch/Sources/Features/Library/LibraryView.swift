@@ -2,6 +2,7 @@ import SwiftUI
 
 struct LibraryView: View {
   @Environment(YouTubeStore.self) private var store
+  @Environment(\.openURL) private var openURL
 
   var body: some View {
     List {
@@ -13,7 +14,7 @@ struct LibraryView: View {
             VideoRow(
               video: video,
               isSaved: true,
-              onPlay: { store.play(video) },
+              onPlay: { openURL(video.youtubeURL) },
               onSave: { store.toggleSaved(video) }
             )
           }
@@ -23,4 +24,3 @@ struct LibraryView: View {
     .navigationTitle("Library")
   }
 }
-

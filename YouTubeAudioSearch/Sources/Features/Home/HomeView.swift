@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
   @Environment(YouTubeStore.self) private var store
+  @Environment(\.openURL) private var openURL
   @State private var selectedTopic = "Trending"
 
   private let topics = [
@@ -57,7 +58,7 @@ struct HomeView: View {
             VideoRow(
               video: video,
               isSaved: store.isSaved(video),
-              onPlay: { store.play(video) },
+              onPlay: { openURL(video.youtubeURL) },
               onSave: { store.toggleSaved(video) }
             )
           }
@@ -84,4 +85,3 @@ struct HomeView: View {
     }
   }
 }
-

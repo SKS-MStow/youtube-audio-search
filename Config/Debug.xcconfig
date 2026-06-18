@@ -1,3 +1,4 @@
 YOUTUBE_API_KEY =
+GOOGLE_IOS_CLIENT_ID =
+GOOGLE_IOS_URL_SCHEME =
 #include? "Secrets.xcconfig"
-

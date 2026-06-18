@@ -14,6 +14,16 @@ struct YouTubeVideo: Identifiable, Hashable, Codable {
 }
 
 extension YouTubeVideo {
+  static func samples(matching query: String) -> [YouTubeVideo] {
+    let normalizedQuery = query.lowercased()
+    let matches = samples.filter {
+      $0.title.lowercased().contains(normalizedQuery)
+        || $0.channelTitle.lowercased().contains(normalizedQuery)
+    }
+
+    return matches.isEmpty ? samples : matches
+  }
+
   static let samples: [YouTubeVideo] = [
     YouTubeVideo(
       id: "M7lc1UVf-VE",
@@ -41,4 +51,3 @@ extension YouTubeVideo {
     )
   ]
 }
-
