@@ -17,11 +17,15 @@
 		3E6C968FEA621EA4DB893D41 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C95C9CE4E6B932439B71F7C /* PlayerView.swift */; };
 		47F4AC4740993D53BB39686C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8941870E7A8838F0D652E55 /* HomeView.swift */; };
 		5654E297734BD4FA6F5FEB7B /* YouTubePlayerWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC3F0326F0692DA9C5923B /* YouTubePlayerWebView.swift */; };
+		5FB4B0F78F01B2CFC05920AC /* CarPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F77910D5D213BAAEA4ED7394 /* CarPlay.framework */; };
+		6C4C1353E46942333415B64D /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F92F78453723F1B36E50858 /* GoogleAuthService.swift */; };
 		737C32BD7BDED031D100F051 /* YouTubeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2955615F8466CEBF023491A3 /* YouTubeAPIClient.swift */; };
 		876A2998E0F00747CC5D2440 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8509429459E2F01018AC373E /* AppRootView.swift */; };
+		90116AACE04A531D04882926 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD1B798B7BF898C7CC5A18 /* CarPlaySceneDelegate.swift */; };
 		AA9E41B5AD411E45EE2F93A2 /* NowPlayingBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC4F1EF4584AA0181961B77 /* NowPlayingBar.swift */; };
 		C8E87966B4DFC0C6CA6AA086 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1760B5B99F173AA7BD7C73E1 /* SearchView.swift */; };
 		D85081E5225B2B09225E4A3C /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B864596B30B3281937FDA45 /* LibraryView.swift */; };
+		DD2868795622C36C116B5503 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = A4135FA65C2399F18F6CB0C3 /* GoogleSignIn */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,7 @@
 		22CFE215A8568AC23883A9D8 /* YouTubeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeVideo.swift; sourceTree = "<group>"; };
 		2955615F8466CEBF023491A3 /* YouTubeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeAPIClient.swift; sourceTree = "<group>"; };
 		2C1554BC7940146E872593FC /* VideoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRow.swift; sourceTree = "<group>"; };
+		2F92F78453723F1B36E50858 /* GoogleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthService.swift; sourceTree = "<group>"; };
 		383A0314816CDAF36DBAF66A /* YouTubeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeStore.swift; sourceTree = "<group>"; };
 		3C95C9CE4E6B932439B71F7C /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		5CC4F1EF4584AA0181961B77 /* NowPlayingBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingBar.swift; sourceTree = "<group>"; };
@@ -41,9 +46,23 @@
 		8D0779473FBBEFA077116483 /* YouTubeAudioSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeAudioSearchApp.swift; sourceTree = "<group>"; };
 		993D847A74EB0620CADA293F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A580798F68E587311CD9BFA1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AAFD1B798B7BF898C7CC5A18 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
 		BBEA9348175054FD9FDC845C /* YouTubeAudioSearch.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = YouTubeAudioSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8941870E7A8838F0D652E55 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F77910D5D213BAAEA4ED7394 /* CarPlay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarPlay.framework; path = System/Library/Frameworks/CarPlay.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91319544C2D76E96E14A3A6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2868795622C36C116B5503 /* GoogleSignIn in Frameworks */,
+				5FB4B0F78F01B2CFC05920AC /* CarPlay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2605B9286EE4D88D0AF07477 /* Settings */ = {
@@ -68,8 +87,17 @@
 				B624B09EA168F5495F6906D1 /* Config */,
 				E96DF4CFF3B06914593BBABE /* Resources */,
 				B954689A2938093D68885294 /* Sources */,
+				59C533A91E71239D71B8802F /* Frameworks */,
 				27A1FA703C8E88E28AB11319 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		4C05A5D45B78C1456BECF3B8 /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				AAFD1B798B7BF898C7CC5A18 /* CarPlaySceneDelegate.swift */,
+			);
+			path = CarPlay;
 			sourceTree = "<group>";
 		};
 		518548A7CBCAC9D5F5CB4CDB /* Home */ = {
@@ -83,10 +111,19 @@
 		52096F4288E3C8EC26F9A38E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				2F92F78453723F1B36E50858 /* GoogleAuthService.swift */,
 				2955615F8466CEBF023491A3 /* YouTubeAPIClient.swift */,
 				383A0314816CDAF36DBAF66A /* YouTubeStore.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		59C533A91E71239D71B8802F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F77910D5D213BAAEA4ED7394 /* CarPlay.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		67DCB063787A840059316958 /* Player */ = {
@@ -140,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				EE4B13C98BF252463963DAC3 /* App */,
+				4C05A5D45B78C1456BECF3B8 /* CarPlay */,
 				94D80957E94A1CF0C9DBFC99 /* Components */,
 				89083EC315CEC8DC05EC6CE8 /* Features */,
 				C2D9A71AEA2EE5C2E46B8F00 /* Models */,
@@ -193,6 +231,7 @@
 			buildPhases = (
 				77372D3ED9D3BB525E1FA248 /* Sources */,
 				F85630CD5D93D2F5E2A740F8 /* Resources */,
+				91319544C2D76E96E14A3A6A /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +239,7 @@
 			);
 			name = YouTubeAudioSearch;
 			packageProductDependencies = (
+				A4135FA65C2399F18F6CB0C3 /* GoogleSignIn */,
 			);
 			productName = YouTubeAudioSearch;
 			productReference = BBEA9348175054FD9FDC845C /* YouTubeAudioSearch.app */;
@@ -229,6 +269,9 @@
 			);
 			mainGroup = 43BF1A2DDFB8D60FA44B186D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1CA914055B6939E6346452F3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 27A1FA703C8E88E28AB11319 /* Products */;
 			projectDirPath = "";
@@ -256,7 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				876A2998E0F00747CC5D2440 /* AppRootView.swift in Sources */,
+				90116AACE04A531D04882926 /* CarPlaySceneDelegate.swift in Sources */,
 				1F817FBF2C22532C33242A7B /* ContentState.swift in Sources */,
+				6C4C1353E46942333415B64D /* GoogleAuthService.swift in Sources */,
 				47F4AC4740993D53BB39686C /* HomeView.swift in Sources */,
 				D85081E5225B2B09225E4A3C /* LibraryView.swift in Sources */,
 				AA9E41B5AD411E45EE2F93A2 /* NowPlayingBar.swift in Sources */,
@@ -404,8 +449,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Config/Debug.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				INFOPLIST_FILE = YouTubeAudioSearch/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -427,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 5;
 				INFOPLIST_FILE = YouTubeAudioSearch/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,6 +510,25 @@
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CA914055B6939E6346452F3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4135FA65C2399F18F6CB0C3 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CA914055B6939E6346452F3 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E0BF09740F7B82B40D2038C /* Project object */;
 }

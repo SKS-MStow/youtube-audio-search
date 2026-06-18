@@ -41,7 +41,7 @@ enum AppTab: String, CaseIterable, Identifiable {
 
   var id: String { rawValue }
 
-  @ViewBuilder
+  @MainActor @ViewBuilder
   var content: some View {
     switch self {
     case .home:
@@ -55,7 +55,7 @@ enum AppTab: String, CaseIterable, Identifiable {
     }
   }
 
-  @ViewBuilder
+  @MainActor @ViewBuilder
   var label: some View {
     switch self {
     case .home:
@@ -69,4 +69,3 @@ enum AppTab: String, CaseIterable, Identifiable {
     }
   }
 }
-

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SearchView: View {
   @Environment(YouTubeStore.self) private var store
+  @Environment(\.openURL) private var openURL
   @State private var query = ""
 
   private let suggestions = [
@@ -47,7 +48,7 @@ struct SearchView: View {
             VideoRow(
               video: video,
               isSaved: store.isSaved(video),
-              onPlay: { store.play(video) },
+              onPlay: { openURL(video.youtubeURL) },
               onSave: { store.toggleSaved(video) }
             )
           }
@@ -65,4 +66,3 @@ struct SearchView: View {
     }
   }
 }
-
